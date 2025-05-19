@@ -1,0 +1,12 @@
+FROM node:20.1 as development
+WORKDIR /usr/src/app
+COPY package*.json .
+RUN npm install
+COPY . .
+RUN npm run build-only
+
+FROM nginx:1.26.1-alpine as production
+COPY --from=development /usr/src/app/dist /usr/share/nginx/html
+COPY nginx.conf.dvfu.template /etc/nginx/templates/default.conf.template
+CMD ["nginx", "-g", "daemon off;"]
+

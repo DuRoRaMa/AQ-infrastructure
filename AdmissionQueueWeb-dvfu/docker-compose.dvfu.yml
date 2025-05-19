@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  frontend:
+    env_file: ./.env.production
+    container_name: aq-frontend
+    build:
+      dockerfile: ./Dockerfile.dvfu
+      target: production
+    networks:
+      - aq-proxy
+    ports:
+      - 80:80
+      - 443:443
+networks:
+  aq-proxy:
+    external: true

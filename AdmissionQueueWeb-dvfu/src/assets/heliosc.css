@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'HeliosC';
+  src: url('./fonts/heliosc.eot'); /* IE 9 Compatibility Mode */
+  src:
+    url('./fonts/heliosc.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('./fonts/heliosc.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/heliosc.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('./fonts/heliosc.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('./fonts/heliosc.svg#heliosc') format('svg'); /* Chrome < 4, Legacy iOS */
+}

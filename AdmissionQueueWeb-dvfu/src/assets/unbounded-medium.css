@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Unbounded-Medium';
+  src: url('./fonts/unbounded-medium.eot'); /* IE 9 Compatibility Mode */
+  src:
+    url('./fonts/unbounded-medium.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('./fonts/unbounded-medium.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('./fonts/unbounded-medium.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('./fonts/unbounded-medium.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('./fonts/unbounded-medium.svg#unbounded-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
